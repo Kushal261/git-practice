@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public interface Calci
 {
-int getSum(int n1, int n2)
+int getSum(int n1, int n2);
 }
 
 class CalciImpl implements Calci
@@ -12,7 +12,7 @@ return n1+n2;
 }
 }
 
-class class CalciDriver 
+class CalciDriver 
 {
 public static void main(String[] args)
 {
@@ -22,6 +22,6 @@ int n1=s.nextInt();
 int n2=s.nextInt();
 CalciImpl c=new CalciImpl();
 int sum=c.getSum(n1,n2);
-System.out,println(n1+ "+" +n2+ "=" +sum);
+System.out.println(n1+ "+" +n2+ "=" +sum);
 }
 }
